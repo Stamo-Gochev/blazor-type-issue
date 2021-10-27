@@ -10,8 +10,6 @@ namespace RazorClassLibrary1
 {
     public partial class Component1<TItem> : ComponentBase
     {
-        public string Id { get; set; } = "123";
-
         [Parameter]
         public IEnumerable<TItem> Data { get; set; }
 
@@ -28,24 +26,6 @@ namespace RazorClassLibrary1
         {
             typeof(Object),
             typeof(Boolean),
-            //typeof(Char),
-            //typeof(String),
-            //typeof(SByte),
-            //typeof(Byte),
-            //typeof(Int16),
-            //typeof(UInt16),
-            //typeof(Int32),
-            //typeof(UInt32),
-            //typeof(Int64),
-            //typeof(UInt64),
-            //typeof(Single),
-            //typeof(Double),
-            //typeof(Decimal),
-            //typeof(DateTime),
-            //typeof(TimeSpan),
-            //typeof(Guid),
-            //typeof(Math),
-            //typeof(Convert)
         };
 
         public bool IsPredefinedType(Type type)
