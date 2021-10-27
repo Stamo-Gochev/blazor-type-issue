@@ -1,0 +1,11 @@
+﻿@page "/"
+
+<h1>Hello, world!</h1>
+
+<RazorClassLibrary1.Component1 Data="@Data">
+
+</RazorClassLibrary1.Component1>
+
+@code {
+    public List<bool?> Data { get; set; } = new List<bool?>() { true };
+}
